@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8" />
@@ -9,45 +9,106 @@
     </title>
 
     <style>
+        /* Corpo da página */
         body {
-            font-family: Arial, sans-serif;
-            margin: 10px;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        /* Cabeçalho */
+        h2 {
             text-align: center;
+            color: rgb(0, 0, 120);
+            padding-top: 20px;
+        }
+
+        p {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        /* Tabela */
+        table {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
         }
 
         th,
         td {
             border: 1px solid #2016b1;
-            padding: 5px;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.1em;
         }
 
         th {
             background-color: #f4f4f4;
         }
 
-        img {
-            width: 100px;
-            height: auto;
+        td {
+            background-color: #fafafa;
         }
 
+        /* Estilo das imagens */
+        img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilo dos links */
         a {
             text-decoration: none;
+            color: #2016b1;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ff6600;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+
+            td, th {
+                font-size: 0.9em;
+                padding: 10px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <h2 style="text-align: center; color: rgb(0, 0, 120)">
-        AGRUPAMENTO DE ESCOLAS DE SAMPAIO
-    </h2>
-    <p style="text-align: center; font-weight: bold">
-        Links directos para os clubes da AES
-    </p>
+
+    <h2>AGRUPAMENTO DE ESCOLAS DE SAMPAIO</h2>
+    <p>Links directos para os clubes da AES</p>
+
     <table>
         <thead>
             <tr>
@@ -77,86 +138,71 @@
             <tr>
                 <td>
                     <a href="https://drive.google.com/file/d/1znla7e9HyWebf_wZJijBd7dxbj5zkjz3/view" target="_blank">
-                        <img src="Images/clube_artesanato.jpg" alt="lOGO Clube Produção Artesanal" />
+                        <img src="Images/clube_artesanato.jpg" alt="LOGO Clube Produção Artesanal" />
                     </a>
                 </td>
                 <td>
-                    <a href="https://drive.google.com/file/d/1znla7e9HyWebf_wZJijBd7dxbj5zkjz3/view" target="_blank">AES
-                        Robot</a>
+                    <a href="https://drive.google.com/file/d/1znla7e9HyWebf_wZJijBd7dxbj5zkjz3/view" target="_blank">AES Robot</a>
                 </td>
                 <td>Clube da Robótica - Desenvolver projectos de robótica e STEM</td>
             </tr>
 
             <tr>
                 <td>
-                    <a href="https://view.genially.com/63545ac344e22a0019d6b062/interactive-content-clube-cozinha-saudaveldivulgacao"
-                        target="_blank">
+                    <a href="https://view.genially.com/63545ac344e22a0019d6b062/interactive-content-clube-cozinha-saudaveldivulgacao" target="_blank">
                         <img src="Images/clube_cozinha.jpg" alt="LOGO Clube Cozinha" />
                     </a>
                 </td>
                 <td>
-                    <a href="https://view.genially.com/63545ac344e22a0019d6b062/interactive-content-clube-cozinha-saudaveldivulgacao"
-                        target="_blank">Clube Cozinha</a>
+                    <a href="https://view.genially.com/63545ac344e22a0019d6b062/interactive-content-clube-cozinha-saudaveldivulgacao" target="_blank">Clube Cozinha</a>
                 </td>
                 <td>
-                    Clube da Cozinha Saudável e Sustentável<br />Promover a aquisição de
-                    hábitos alimentares saudáveis
+                    Clube da Cozinha Saudável e Sustentável<br />Promover a aquisição de hábitos alimentares saudáveis
                 </td>
             </tr>
 
             <tr>
                 <td>
-                    <a href="https://view.genially.com/63617ef790fb9f0018a5b3f2/interactive-content-espaco-digitaldivulgacao"
-                        target="_blank">
+                    <a href="https://view.genially.com/63617ef790fb9f0018a5b3f2/interactive-content-espaco-digitaldivulgacao" target="_blank">
                         <img src="Images/clube_digital.jpg" alt="LOGO Clube Espaço Digital" />
                     </a>
                 </td>
                 <td>
-                    <a href="https://view.genially.com/63617ef790fb9f0018a5b3f2/interactive-content-espaco-digitaldivulgacao"
-                        target="_blank">Clube Espaço Digital
-                    </a>
+                    <a href="https://view.genially.com/63617ef790fb9f0018a5b3f2/interactive-content-espaco-digitaldivulgacao" target="_blank">Clube Espaço Digital</a>
                 </td>
                 <td>
-                    Clube Espaço Digital - Promover um Espaço DIGITAL que incentive e
-                    apoie os professores na utilização de novas ferramentas digitais e
-                    de apoio ao estudo dos alunos, tal como a utilização da plataforma
-                    MILAGE APRENDER+
+                    Clube Espaço Digital - Promover um Espaço DIGITAL que incentive e apoie os professores na utilização de novas ferramentas digitais e de apoio ao estudo dos alunos.
                 </td>
             </tr>
 
             <tr>
                 <td>
-                    <a href="https://view.genially.com/6355203724cb410010b77d96/interactive-content-protecao-civildivulgacao"
-                        target="_blank">
-                        <img src="Images/clube_protecao_civil.jpg" alt="LOGO Clube Protecção Civil" />
+                    <a href="https://view.genially.com/6355203724cb410010b77d96/interactive-content-protecao-civildivulgacao" target="_blank">
+                        <img src="Images/clube_protecao_civil.jpg" alt="LOGO Clube Proteção Civil" />
                     </a>
                 </td>
                 <td>
-                    <a href="https://view.genially.com/6355203724cb410010b77d96/interactive-content-protecao-civildivulgacao"
-                        target="_blank">
-                        Clube Espaço Digital</a>
+                    <a href="https://view.genially.com/6355203724cb410010b77d96/interactive-content-protecao-civildivulgacao" target="_blank">Clube Proteção Civil</a>
                 </td>
                 <td>
-                    Clube Protecção Civil - Sensibilizar e promover as questões da
-                    segurança no âmbito da Proteção Civil
+                    Clube Proteção Civil - Sensibilizar e promover as questões da segurança no âmbito da Proteção Civil
                 </td>
             </tr>
 
             <tr>
                 <td>
-                    <a href="https://view.genially.com/63532fee44e22a0019d40f6d/interactive-content-aes-robodivulgacao"
-                        target="_blank">
-                        <img src="Images/clube_robotica.jpg" alt="lOGO clube robótica" />
+                    <a href="https://view.genially.com/63532fee44e22a0019d40f6d/interactive-content-aes-robodivulgacao" target="_blank">
+                        <img src="Images/clube_robotica.jpg" alt="LOGO Clube Robótica" />
                     </a>
                 </td>
                 <td>
-                    <a href="https://view.genially.com/63532fee44e22a0019d40f6d/interactive-content-aes-robodivulgacao"
-                        target="_blank">AES Robot</a>
+                    <a href="https://view.genially.com/63532fee44e22a0019d40f6d/interactive-content-aes-robodivulgacao" target="_blank">AES Robot</a>
                 </td>
                 <td>Clube da Robótica - Desenvolver projectos de robótica e STEM</td>
             </tr>
         </tbody>
     </table>
+
 </body>
 
 </html>
